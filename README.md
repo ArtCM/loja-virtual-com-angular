@@ -1,27 +1,91 @@
-# ProjetoInchurch
+<div markdown="1">
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+# Loja Virtual Com Angular
 
-## Development server
+<br>
+Arthur Correa - Desenvolvedor Front-end
+<br><br>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/arthurcorream/)
+[![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram)](https://www.instagram.com/arthurcoorrea/)
 
-## Code scaffolding
+Ver: 0.0.1 - Last update: 10/04/2024
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<br>
 
-## Build
+</div>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<div markdown="1">
 
-## Running unit tests
+# Sobre
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Projeto realizado para processo seletivo da vaga Desenvolvedor Front-end, consiste em uma loja virtual utilizando a API de loja fake indicada. Optei por não utilizar nenhum framework CSS.
 
-## Running end-to-end tests
+<br>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Instalação
+---------
+- É necessário o Angular v14.1.3
+- É necessário o Node.js v18.17.1
+---------
 
-## Further help
+Credenciais
+---------
+### Usuario e Senha Administrativas
+~~~
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Estão disponíveis na página de login da aplicação
+
+~~~
+---------
+
+API Utilizada
+---------
+### Loja fake DummyJSON
+~~~
+
+https://dummyjson.com/
+
+~~~
+---------
+
+Acesso
+---------
+### Acesse a partir do comando "ng serve" para iniciar aplicação e utilizando o link abaixo para rodar local
+~~~
+
+http://localhost:4200
+
+~~~
+---------
+
+Nomenclatura de commits
+---------
+- docs: apenas mudanças de documentação;
+- feat: uma nova funcionalidade;
+- fix: a correção de um bug;
+- perf: mudança de código focada em melhorar performance;
+- refactor: mudança de código que não adiciona uma funcionalidade e também não corrigi um bug;
+- style: mudanças no código que não afetam seu significado (espaço em branco, formatação, ponto e vírgula, etc);
+- test: adicionar ou corrigir testes.
+---------
+
+Tecnologias Utilizadas:
+---------
+- Angular Versão 14.1.3
+- HTML
+- CSS
+- JAVASCRIPT
+- TYPESCRIPT
+- Node.js
+- Git
+---------
+
+# Informações adicionais
+
+- No projeto utilizo o normalize CSS v8.0.1, para promover maior compatibilidade com todos os navegadores, disponível em:
+~~~
+
+https://necolas.github.io/normalize.css/
+
+~~~
