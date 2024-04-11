@@ -3,8 +3,19 @@ nav{
     padding: 10px 0;
 }
 
+nav :where(a, p){
+    padding: 0 5px;
+    text-align: center;
+    width: 110px;
+    font-weight: 700;
+    transition: 0.3s all ease-in-out;
+}
+
+
 nav :where(a, p):hover{
     color: var(--azul-low);
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.1);
 }
 
 .nav-desk a{
@@ -114,6 +125,8 @@ nav :where(a, p):hover{
 
 .navbar-icon svg:hover{
     fill: var(--azul-low);
+    transition: 0.3s all ease-in-out;
+    transform: scale(1.1);
 }
 
 .logo-mob{
