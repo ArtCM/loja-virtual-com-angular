@@ -41,9 +41,10 @@
         <h2>Produtos</h2>
         <div class="products">
             <div *ngFor="let item of products" class="products__card d-flex centralize flex-col">
-                <p class="products__card--title">{{item.title}}</p>
                 <img *ngFor="let image of item.images; let index = index" class="products__card--image" [hidden]="index>0" [src]="image" alt="">
+                <p class="products__card--title">{{item.title}}</p>
                 <p class="products__card--price">{{item.price | currency}}</p>
+                <button (click)="goToProduct(item.id)"  >comprar</button>
             </div>
         </div>
     </div>
