@@ -25,8 +25,10 @@ Projeto realizado para processo seletivo da vaga Desenvolvedor Front-end, consis
 
 Instalação
 ---------
-- É necessário o Angular v14.1.3
 - É necessário o Node.js v18.17.1
+- É necessário o Angular v17.3.0
+- É necessário rodar `npm i`
+- Após, rodar `npm start`
 ---------
 
 Credenciais

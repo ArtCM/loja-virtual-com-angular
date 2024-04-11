@@ -1,0 +1,24 @@
+<navbar />
+
+<p *ngIf="products.length > 0">Hello World {{user}}</p>
+
+<ul>
+    <li class="teste" *ngFor="let item of products">{{item.title}} - {{item.price | currency}}</li>
+</ul>
+
+<div>
+    <div *ngFor="let item of products">
+        <img *ngFor="let image of item.images" [src]="image" alt="">
+    </div>
+
+    <p *ngFor="let item of products">{{item.title}}</p>
+</div>
+
+
+<button (click)="teste()">teste</button>
+
+<main>
+    
+</main>
+
+<footerComponent />
