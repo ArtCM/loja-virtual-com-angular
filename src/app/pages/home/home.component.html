@@ -6,7 +6,7 @@
             <div class="col-50-flex header__text">
                 <h1>Wave Store</h1>
                 <p>Produtos online a um clique, compre com <strong class="header__text--alternative">segurança!</strong></p>
-                <button>Clique Aqui!</button>
+                <a href="#produtos">Clique Aqui!</a>
                 <p class="header__text--cta-text">E conheça nossos produtos</p>
             </div>
             <div class="col-50-flex d-flex flex-end">
@@ -16,34 +16,31 @@
     </div>
 </header>
 
-<!-- <p *ngIf="products.length > 0">Hello World {{user}}</p>
-
-<ul>
-    <li class="teste" *ngFor="let item of products">{{item.title}} - {{item.price | currency}}</li>
-</ul>
-
-<div>
-    <div *ngFor="let item of products">
-        <img *ngFor="let image of item.images Let index = index;" class="products__card--image" [src]="image" alt="">
-    </div>
-
-    <p *ngFor="let item of products">{{item.title}}</p>
-</div> 
-
-<button (click)="teste()">teste</button>
--->
-
-
-
-
 <main>
+    <div id="sobre" class="sobre-bg">
+        <div class="container">
+            <div class="sobre d-flex centralize direction-flex mb-3">
+                <div class="col-50-flex pl-3">
+                    <h2>Sobre a Wave Store</h2>
+                    <p>
+                        A Empresa tem nome, logo e itens meramente ilustrativos, criados somente para realização do teste porposto para vaga de estágio de Desenvolvimento Front-end
+                    </p>
+                </div>
+                <div class="col-50-flex pl-3 d-flex centralize">
+                    <img src="../../../assets/images/image-interna.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+        
     <div class="container">
-        <h2>Produtos</h2>
+        <h2 id="produtos">Produtos</h2>
         <hr>
-        <div class="categories d-flex flex-wrap">
-            <div *ngFor="let item of categorias" class="categories__category p-1">
+        <h3>Categorias</h3>
+        <div class="categories d-flex flex-wrap centralize">
+            <div *ngFor="let item of categorias">
                 <div>
-                    <p (click)="listCategory(item)">{{item}}</p>
+                    <p class="categories__category" (click)="listCategory(item)">{{item}}</p>
                 </div>
             </div>
         </div>
