@@ -32,12 +32,14 @@ abaixo em "classes globais" estão as classes reutilizáveis utilizadas no códi
 /* Paleta de cores */
 :root{
     --black: #12090d;
+    --branco: #fff;
     --azul-high: #122b43;
     --azul-mid: #1a75a7;
     --azul-low: #20a0d8;
     --azul-logo: #20dad8;
-    --branco: #fff;
     --violet: #1C1F67;
+    --verde-neon: #ADFF2F;
+    --verde-text: #87D118;
 }
 
 .d-none{

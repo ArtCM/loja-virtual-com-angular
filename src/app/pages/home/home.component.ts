@@ -16,18 +16,17 @@ import { Router } from '@angular/router';
 
 export class HomeComponent implements OnInit {
 
-    onRouterLinkActive($event: Event) {
-    throw new Error('Method not implemented.');
-    }
-
-    user: string = 'nome';
     products: ProductModel[] = [];
+    categorias: string[] = [];
 
     constructor(private api: ApiService, private router: Router) { }
 
     ngOnInit() { 
-        this.api.getProduct().subscribe((response:any)=> {
+        this.api.getProducts().subscribe((response)=> {
             this.products = response.products;
+        })
+        this.api.getCategories().subscribe((response)=> {
+            this.categorias = response;
         })
     }
 
@@ -35,7 +34,9 @@ export class HomeComponent implements OnInit {
         this.router.navigate(['product', productId]);
     }
 
-    teste(){
-        
+    listCategory(productCategory: string){
+        this.api.getProductsByCategory(productCategory).subscribe((response)=> {
+            this.products = response.products;
+        })
     }
 }

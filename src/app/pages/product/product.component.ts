@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../../component/navbar/navbar.component';
-import { ApiService } from '../../service/api.service';
 import { ProductModel } from '../../models/product';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../component/footer/footer.component";
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../../service/api.service';
 
 @Component({
     standalone: true,
@@ -15,13 +16,17 @@ import { FooterComponent } from "../../component/footer/footer.component";
 
 export class ProductComponent implements OnInit {
 
-    products: ProductModel[] = [];
+    product?: ProductModel;
+    showAlert: boolean = false;
 
-    constructor(private api: ApiService) { }
+    constructor(private routes: ActivatedRoute, private api: ApiService) { }
 
     ngOnInit() { 
-        this.api.getProduct().subscribe((response:any)=> {
-            this.products = response.products;
+        const productId = this.routes.snapshot.paramMap.get('id') ?? 0;
+
+        this.api.getProductById(+productId).subscribe((response)=> {
+            this.product = response;
         })
     }
+
 }

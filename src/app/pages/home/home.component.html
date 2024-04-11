@@ -39,12 +39,23 @@
 <main>
     <div class="container">
         <h2>Produtos</h2>
+        <hr>
+        <div class="categories d-flex flex-wrap">
+            <div *ngFor="let item of categorias" class="categories__category p-1">
+                <div>
+                    <p (click)="listCategory(item)">{{item}}</p>
+                </div>
+            </div>
+        </div>
+        <hr>
         <div class="products">
             <div *ngFor="let item of products" class="products__card d-flex centralize flex-col">
+                <div class="products__card--stock">Apenas <span class="products__card--stock-num">{{item.stock}}</span> UNID.</div>
                 <img *ngFor="let image of item.images; let index = index" class="products__card--image" [hidden]="index>0" [src]="image" alt="">
                 <p class="products__card--title">{{item.title}}</p>
-                <p class="products__card--price">{{item.price | currency}}</p>
-                <button (click)="goToProduct(item.id)"  >comprar</button>
+                <p class="products__card--price">{{ item.price | currency: 'BRL'}}</p>
+                <p style="font-size: 14px;">À vista no PIX</p>
+                <button (click)="goToProduct(item.id)"  >COMPRAR</button>
             </div>
         </div>
     </div>
