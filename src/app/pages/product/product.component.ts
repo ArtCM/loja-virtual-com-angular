@@ -33,7 +33,7 @@ export class ProductComponent implements OnInit {
     success() {
         Swal.fire({
             title: "Sucesso!",
-            text: "You clicked the button!",
+            text: "Produto Comprado Com Sucesso!",
             icon: "success"
         });
     }

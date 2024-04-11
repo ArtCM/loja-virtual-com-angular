@@ -67,10 +67,22 @@ header p{
 
 .sobre{
     padding: 40px 0;
+    flex-direction: column;
+}
+@media(min-width:850px){
+    .sobre{
+        flex-direction: row;
+    }
 }
 
 .sobre img{
-    width: 500px;
+    width: 400px;
+    padding: 20px 40px;
+}
+@media(min-width:1200px){
+    .sobre img{
+        width: 500px;
+    }
 }
 
 .products{
