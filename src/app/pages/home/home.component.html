@@ -1,6 +1,22 @@
 <navbar />
 
-<p *ngIf="products.length > 0">Hello World {{user}}</p>
+<header>
+    <div class="container">
+        <div class="d-flex direction-flex">
+            <div class="col-50-flex header__text">
+                <h1>Wave Store</h1>
+                <p>Produtos online a um clique, compre com <strong class="header__text--alternative">segurança!</strong></p>
+                <button>Clique Aqui!</button>
+                <p class="header__text--cta-text">E conheça nossos produtos</p>
+            </div>
+            <div class="col-50-flex d-flex flex-end">
+                <img class="header__img" src="../../../assets/images/celular-header.webp" alt="Wave Store">
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- <p *ngIf="products.length > 0">Hello World {{user}}</p>
 
 <ul>
     <li class="teste" *ngFor="let item of products">{{item.title}} - {{item.price | currency}}</li>
@@ -12,13 +28,20 @@
     </div>
 
     <p *ngFor="let item of products">{{item.title}}</p>
-</div>
+</div> -->
 
 
 <button (click)="teste()">teste</button>
 
 <main>
-    
+    <div class="container">
+        <div class="products">
+            <h2>Produtos</h2>
+            <div *ngFor="let item of products" class="products__card">
+                <p>{{item.title}}</p>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footerComponent />
+<footercomponent />

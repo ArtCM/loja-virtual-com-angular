@@ -20,12 +20,12 @@ export class HomeComponent implements OnInit {
     constructor(private api: ApiService) { }
 
     ngOnInit() { 
-        
-    }
-
-    teste(){
         this.api.getProduct().subscribe((response:any)=> {
             this.products = response.products;
         })
+    }
+
+    teste(){
+        
     }
 }
