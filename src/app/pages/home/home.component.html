@@ -24,24 +24,26 @@
 
 <div>
     <div *ngFor="let item of products">
-        <img *ngFor="let image of item.images" [src]="image" alt="">
+        <img *ngFor="let image of item.images Let index = index;" class="products__card--image" [src]="image" alt="">
     </div>
 
     <p *ngFor="let item of products">{{item.title}}</p>
-</div> -->
-
+</div> 
 
 <button (click)="teste()">teste</button>
+-->
+
+
+
 
 <main>
     <div class="container">
+        <h2>Produtos</h2>
         <div class="products">
-            <h2>Produtos</h2>
-            <div *ngFor="let item of products" class="products__card">
-                <p>{{item.title}}</p>
-                <img [src]="item.images" alt="">
-                <p>{{item.price | currency}}</p>
-                
+            <div *ngFor="let item of products" class="products__card d-flex centralize flex-col">
+                <p class="products__card--title">{{item.title}}</p>
+                <img *ngFor="let image of item.images; let index = index" class="products__card--image" [hidden]="index>0" [src]="image" alt="">
+                <p class="products__card--price">{{item.price | currency}}</p>
             </div>
         </div>
     </div>
