@@ -21,6 +21,17 @@ Ver: 0.0.1 - Last update: 10/04/2024
 
 Projeto realizado para processo seletivo da vaga Desenvolvedor Front-end, consiste em uma loja virtual utilizando a API de loja fake indicada. Optei por não utilizar nenhum framework CSS.
 
+Desenvolvi o Layout e Design do site, processo de listagem e filtro por categorias, página individual e interação com botão de compra, processo de login e carrinho de compra ainda em desenvolvimento.
+
+<br>
+
+# Preview:
+
+## [Clique aqui e veja a aplicação](https://loja-virtual-com-angular.vercel.app)
+
+
+<img alt="CSS Banner" src="./readme-img.png" />
+
 <br>
 
 Instalação
@@ -29,17 +40,16 @@ Instalação
 - É necessário o Angular v17.3.0
 - É necessário rodar `npm i`
 - Após, rodar `npm start`
----------
 
-Credenciais
----------
-### Usuario e Senha Administrativas
+### Acesse a partir do comando "ng serve" para iniciar aplicação e utilizando o link abaixo para rodar local
 ~~~
 
-Estão disponíveis na página de login da aplicação
+http://localhost:4200
 
 ~~~
 ---------
+
+<br>
 
 API Utilizada
 ---------
@@ -50,16 +60,7 @@ https://dummyjson.com/
 
 ~~~
 ---------
-
-Acesso
----------
-### Acesse a partir do comando "ng serve" para iniciar aplicação e utilizando o link abaixo para rodar local
-~~~
-
-http://localhost:4200
-
-~~~
----------
+<br>
 
 Nomenclatura de commits
 ---------
@@ -72,16 +73,20 @@ Nomenclatura de commits
 - test: adicionar ou corrigir testes.
 ---------
 
+
 Tecnologias Utilizadas:
 ---------
-- Angular Versão 14.1.3
+- Node.js v18.17.1
+- Angular v17.3.0
 - HTML
 - CSS
 - JAVASCRIPT
 - TYPESCRIPT
-- Node.js
 - Git
+- SweetAlert2
 ---------
+
+<br>
 
 # Informações adicionais
 
