@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from "../../component/footer/footer.component";
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from '../../service/api.service';
+import Swal from 'sweetalert2';
 
 @Component({
     standalone: true,
@@ -27,6 +28,14 @@ export class ProductComponent implements OnInit {
         this.api.getProductById(+productId).subscribe((response)=> {
             this.product = response;
         })
+    }
+
+    success() {
+        Swal.fire({
+            title: "Sucesso!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
     }
 
 }
