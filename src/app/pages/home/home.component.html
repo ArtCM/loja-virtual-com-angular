@@ -39,6 +39,9 @@
             <h2>Produtos</h2>
             <div *ngFor="let item of products" class="products__card">
                 <p>{{item.title}}</p>
+                <img [src]="item.images" alt="">
+                <p>{{item.price | currency}}</p>
+                
             </div>
         </div>
     </div>
