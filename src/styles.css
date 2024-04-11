@@ -33,7 +33,7 @@ abaixo em "classes globais" estão as classes reutilizáveis utilizadas no códi
 :root{
     --black: #12090d;
     --azul-high: #122b43;
-    --azul-mid: #146189;
+    --azul-mid: #1a75a7;
     --azul-low: #20a0d8;
     --azul-logo: #20dad8;
     --branco: #fff;
@@ -142,6 +142,20 @@ abaixo em "classes globais" estão as classes reutilizáveis utilizadas no códi
 .mb-2{margin-bottom: 20px;}
 .mb-3{margin-bottom: 30px;}
 
+.col{
+    width: 100%;
+}
+
+.col-50-flex{
+    width: 100%;
+}
+
+@media(min-width:700px){
+    .col-50-flex{
+        width: 50%;
+    }
+}
+
 body{
     margin: auto;
 }
@@ -189,10 +203,5 @@ footer{
     margin-right: auto;
     margin-left: auto;
 }
-
-.col{
-    width: 100%;
-}
-
 /* end Classes Globais */
 
