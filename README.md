@@ -19,7 +19,9 @@ Ver: 0.0.1 - Last update: 11/04/2024
 
 # Sobre
 
-Projeto realizado para processo seletivo da vaga Desenvolvedor Front-end, consiste em uma loja virtual utilizando a API de loja fake indicada. Optei por não utilizar nenhum framework CSS.
+O Projeto consiste em uma loja virtual utilizando a API de loja fake indicada. 
+
+Optei por não utilizar nenhum framework CSS.
 
 Desenvolvi o Layout e Design do site, processo de listagem e filtro por categorias, página individual e interação com botão de compra, processo de login e carrinho de compra ainda em desenvolvimento.
 
